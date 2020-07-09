@@ -1,0 +1,66 @@
+<xmlscript>
+<vr id="vr_%callerid%_" text="0"/>
+<vr id="vr_%callerid%_Counter" value="0"/>
+
+<if condition="#vr_%callerid%_SCounter = 1">
+<then>
+<vr id="vr_%callerid%_SCounter" value="0"/>
+<vr id="F2B-S-Counter" value="#F2B-S-Counter - 1"/>
+<vr id="vr_%callerid%_S" value="0"/>
+<vr id="F2B-S-Check" value="0"/>
+</then>
+</if>
+
+<if condition="#vr_%callerid%_FCounter = 1">
+<then>
+<vr id="vr_%callerid%_FCounter" value="0"/>
+<vr id="F2B-F-Counter" value="#F2B-F-Counter - 1"/>
+<vr id="vr_%callerid%_F" value="0"/>
+<vr id="F2B-F-Check" value="0"/>
+
+</then>
+</if>
+
+<if condition="#vr_%callerid%_PCounter = 1">
+<then>
+<vr id="vr_%callerid%_PCounter" value="0"/>
+<vr id="F2B-P-Counter" value="#F2B-P-Counter - 1"/>
+<vr id="vr_%callerid%_P" value="0"/>
+<vr id="F2B-P-Check" value="0"/>
+
+</then>
+</if>
+
+
+<if condition="#vr_%callerid%_LCounter = 1">
+<then>
+<vr id="vr_%callerid%_LCounter" value="0"/>
+<vr id="F2B-L-Counter" value="#F2B-L-Counter - 1"/>
+<vr id="vr_%callerid%_L" value="0"/>
+<vr id="F2B-L-Check" value="0"/>
+
+</then>
+</if>
+
+<if condition="#vr_%callerid%_S1Counter = 1">
+<then>
+<vr id="vr_%callerid%_S1Counter" value="0"/>
+<vr id="F2B-S1-Counter" value="#F2B-S1-Counter - 1"/>
+<vr id="vr_%callerid%_S1" value="0"/>
+<vr id="F2B-S1-Check" value="0"/>
+</then>
+</if>
+
+<if condition="#vr_%callerid%_S2Counter = 1">
+<then>
+<vr id="vr_%callerid%_S2Counter" value="0"/>
+<vr id="F2B-S2-Counter" value="#F2B-S2-Counter - 1"/>
+<vr id="vr_%callerid%_S2" value="0"/>
+<vr id="F2B-S2-Check" value="0"/>
+</then>
+</if>
+
+
+
+</xmlscript>
+

@@ -1,0 +1,1573 @@
+<xmlscript>
+
+<while state="co schedule = on">
+
+<if condition="@vr_FY1-LANE-A_ = 0">
+  <then>
+    <trace text="No Train-A"/>
+      </then>
+        <else>
+
+  <if condition="#vr_FY1-LANE-A_Counter = 0">
+    <then>
+
+
+
+
+<if condition="#vr_FY1-LANE-A_LocoType = 0">
+    <then>
+
+
+
+<vr id="F1-S-Counter" value="#F1-S-Counter + 1"/>
+<vr id="vr_FY1-LANE-A_Counter" value="1"/>
+<vr id="vr_FY1-LANE-A_SCounter" value="1"/>
+<vr id="vr_FY1-LANE-A_S" value="#F1-S-Counter" text="vr_FY1-LANE-A_"/>
+    </then>
+
+  </if>
+
+<if condition="#vr_FY1-LANE-A_LocoType = 1">
+    <then>
+  <trace text="Freight"/>
+<vr id="F1-F-Counter" value="#F1-F-Counter + 1"/>
+<vr id="vr_FY1-LANE-A_Counter" value="1"/>
+<vr id="vr_FY1-LANE-A_FCounter" value="1"/>
+<vr id="vr_FY1-LANE-A_F" value="#F1-F-Counter" text="vr_FY1-LANE-A_"/>
+
+    </then>
+
+  </if>
+
+<if condition="#vr_FY1-LANE-A_LocoType = 2">
+    <then>
+
+<vr id="F1-P-Counter" value="#F1-P-Counter + 1"/>
+<vr id="vr_FY1-LANE-A_Counter" value="1"/>
+<vr id="vr_FY1-LANE-A_PCounter" value="1"/>
+<vr id="vr_FY1-LANE-A_P" value="#F1-P-Counter" text="vr_FY1-LANE-A_"/>
+    </then>
+
+  </if>
+
+<if condition="#vr_FY1-LANE-A_LocoType = 3">
+    <then>
+
+<vr id="F1-L-Counter" value="#F1-L-Counter + 1"/>
+<vr id="vr_FY1-LANE-A_Counter" value="1"/>
+<vr id="vr_FY1-LANE-A_LCounter" value="1"/>
+<vr id="vr_FY1-LANE-A_L" value="#F1-L-Counter" text="vr_FY1-LANE-A_"/>
+
+    </then>
+
+  </if>
+
+  <if condition="#vr_FY1-LANE-A_LocoType = 4">
+      <then>
+
+  <vr id="F1-S1-Counter" value="#F1-S1-Counter + 1"/>
+  <vr id="vr_FY1-LANE-A_Counter" value="1"/>
+  <vr id="vr_FY1-LANE-A_S1Counter" value="1"/>
+  <vr id="vr_FY1-LANE-A_S1" value="#F1-S1-Counter" text="vr_FY1-LANE-A_"/>
+
+      </then>
+
+    </if>
+
+    <if condition="#vr_FY1-LANE-A_LocoType = 5">
+        <then>
+
+    <vr id="F1-S2-Counter" value="#F1-S2-Counter + 1"/>
+    <vr id="vr_FY1-LANE-A_Counter" value="1"/>
+    <vr id="vr_FY1-LANE-A_S2Counter" value="1"/>
+    <vr id="vr_FY1-LANE-A_S2" value="#F1-S2-Counter" text="vr_FY1-LANE-A_"/>
+
+        </then>
+
+      </if>
+
+
+
+      </then>
+    </if>
+  </else>
+</if>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<if condition="@vr_FY1-LANE-B_ = 0">
+    <then>
+<trace text="No Train-B"/>
+    </then>
+    <else>
+
+<if condition="#vr_FY1-LANE-B_Counter = 0">
+<then>
+
+
+
+
+<if condition="#vr_FY1-LANE-B_LocoType = 0">
+<then>
+
+
+<vr id="vr_FY1-LANE-B_SCounter" value="1"/>
+<vr id="F1-S-Counter" value="#F1-S-Counter + 1"/>
+<vr id="vr_FY1-LANE-B_Counter" value="1"/>
+<vr id="vr_FY1-LANE-B_S" value="#F1-S-Counter" text="vr_FY1-LANE-B_"/>
+</then>
+
+</if>
+
+<if condition="#vr_FY1-LANE-B_LocoType = 1">
+<then>
+
+<trace text="Freight"/>
+<vr id="F1-F-Counter" value="#F1-F-Counter + 1"/>
+<vr id="vr_FY1-LANE-B_Counter" value="1"/>
+<vr id="vr_FY1-LANE-B_FCounter" value="1"/>
+<vr id="vr_FY1-LANE-B_F" value="#F1-F-Counter" text="vr_FY1-LANE-B_"/>
+
+
+
+
+
+</then>
+
+</if>
+
+<if condition="#vr_FY1-LANE-B_LocoType = 2">
+    <then>
+
+<vr id="F1-P-Counter" value="#F1-P-Counter + 1"/>
+<vr id="vr_FY1-LANE-B_Counter" value="1"/>
+<vr id="vr_FY1-LANE-B_PCounter" value="1"/>
+<vr id="vr_FY1-LANE-B_P" value="#F1-P-Counter" text="vr_FY1-LANE-B_"/>
+    </then>
+
+  </if>
+
+<if condition="#vr_FY1-LANE-B_LocoType = 3">
+    <then>
+
+<vr id="F1-L-Counter" value="#F1-L-Counter + 1"/>
+<vr id="vr_FY1-LANE-B_Counter" value="1"/>
+<vr id="vr_FY1-LANE-B_LCounter" value="1"/>
+<vr id="vr_FY1-LANE-B_L" value="#F1-L-Counter" text="vr_FY1-LANE-B_"/>
+
+    </then>
+
+  </if>
+
+
+<if condition="#vr_FY1-LANE-B_LocoType = 4">
+    <then>
+
+<vr id="F1-S1-Counter" value="#F1-S1-Counter + 1"/>
+<vr id="vr_FY1-LANE-B_Counter" value="1"/>
+<vr id="vr_FY1-LANE-B_S1Counter" value="1"/>
+<vr id="vr_FY1-LANE-B_S1" value="#F1-S1-Counter" text="vr_FY1-LANE-B_"/>
+
+    </then>
+
+  </if>
+
+  <if condition="#vr_FY1-LANE-B_LocoType = 5">
+      <then>
+
+  <vr id="F1-S2-Counter" value="#F1-S2-Counter + 1"/>
+  <vr id="vr_FY1-LANE-B_Counter" value="1"/>
+  <vr id="vr_FY1-LANE-B_S2Counter" value="1"/>
+  <vr id="vr_FY1-LANE-B_S2" value="#F1-S2-Counter" text="vr_FY1-LANE-B_"/>
+
+      </then>
+
+    </if>
+
+
+  </then>
+</if>
+</else>
+  </if>
+
+
+
+
+
+
+
+  <if condition="@vr_FY1-LANE-C_ = 0">
+      <then>
+  <trace text="No Train-C"/>
+      </then>
+      <else>
+
+  <if condition="#vr_FY1-LANE-C_Counter = 0">
+  <then>
+
+
+
+
+  <if condition="#vr_FY1-LANE-C_LocoType = 0">
+  <then>
+
+
+  <vr id="vr_FY1-LANE-C_SCounter" value="1"/>
+  <vr id="F1-S-Counter" value="#F1-S-Counter + 1"/>
+  <vr id="vr_FY1-LANE-C_Counter" value="1"/>
+  <vr id="vr_FY1-LANE-C_S" value="#F1-S-Counter" text="vr_FY1-LANE-C_"/>
+  </then>
+
+  </if>
+
+  <if condition="#vr_FY1-LANE-C_LocoType = 1">
+  <then>
+
+  <trace text="Freight"/>
+  <vr id="F1-F-Counter" value="#F1-F-Counter + 1"/>
+  <vr id="vr_FY1-LANE-C_Counter" value="1"/>
+  <vr id="vr_FY1-LANE-C_FCounter" value="1"/>
+  <vr id="vr_FY1-LANE-C_F" value="#F1-F-Counter" text="vr_FY1-LANE-C_"/>
+
+
+
+
+
+  </then>
+
+  </if>
+
+  <if condition="#vr_FY1-LANE-C_LocoType = 2">
+      <then>
+
+  <vr id="F1-P-Counter" value="#F1-P-Counter + 1"/>
+  <vr id="vr_FY1-LANE-C_Counter" value="1"/>
+  <vr id="vr_FY1-LANE-C_PCounter" value="1"/>
+  <vr id="vr_FY1-LANE-C_P" value="#F1-P-Counter" text="vr_FY1-LANE-C_"/>
+      </then>
+
+    </if>
+
+  <if condition="#vr_FY1-LANE-C_LocoType = 3">
+      <then>
+
+  <vr id="F1-L-Counter" value="#F1-L-Counter + 1"/>
+  <vr id="vr_FY1-LANE-C_Counter" value="1"/>
+  <vr id="vr_FY1-LANE-C_LCounter" value="1"/>
+  <vr id="vr_FY1-LANE-C_L" value="#F1-L-Counter" text="vr_FY1-LANE-C_"/>
+
+      </then>
+
+    </if>
+
+
+  <if condition="#vr_FY1-LANE-C_LocoType = 4">
+      <then>
+
+  <vr id="F1-S1-Counter" value="#F1-S1-Counter + 1"/>
+  <vr id="vr_FY1-LANE-C_Counter" value="1"/>
+  <vr id="vr_FY1-LANE-C_S1Counter" value="1"/>
+  <vr id="vr_FY1-LANE-C_S1" value="#F1-S1-Counter" text="vr_FY1-LANE-C_"/>
+
+      </then>
+
+    </if>
+
+    <if condition="#vr_FY1-LANE-C_LocoType = 5">
+        <then>
+
+    <vr id="F1-S2-Counter" value="#F1-S2-Counter + 1"/>
+    <vr id="vr_FY1-LANE-C_Counter" value="1"/>
+    <vr id="vr_FY1-LANE-C_S2Counter" value="1"/>
+    <vr id="vr_FY1-LANE-C_S2" value="#F1-S2-Counter" text="vr_FY1-LANE-C_"/>
+
+        </then>
+
+      </if>
+
+
+    </then>
+  </if>
+  </else>
+    </if>
+
+
+    <if condition="@vr_FY1-LANE-D_ = 0">
+        <then>
+    <trace text="No Train-D"/>
+        </then>
+        <else>
+
+    <if condition="#vr_FY1-LANE-D_Counter = 0">
+    <then>
+
+
+
+
+    <if condition="#vr_FY1-LANE-D_LocoType = 0">
+    <then>
+
+
+    <vr id="vr_FY1-LANE-D_SCounter" value="1"/>
+    <vr id="F1-S-Counter" value="#F1-S-Counter + 1"/>
+    <vr id="vr_FY1-LANE-D_Counter" value="1"/>
+    <vr id="vr_FY1-LANE-D_S" value="#F1-S-Counter" text="vr_FY1-LANE-D_"/>
+    </then>
+
+    </if>
+
+    <if condition="#vr_FY1-LANE-D_LocoType = 1">
+    <then>
+
+    <trace text="Freight"/>
+    <vr id="F1-F-Counter" value="#F1-F-Counter + 1"/>
+    <vr id="vr_FY1-LANE-D_Counter" value="1"/>
+    <vr id="vr_FY1-LANE-D_FCounter" value="1"/>
+    <vr id="vr_FY1-LANE-D_F" value="#F1-F-Counter" text="vr_FY1-LANE-D_"/>
+
+
+
+
+
+    </then>
+
+    </if>
+
+    <if condition="#vr_FY1-LANE-D_LocoType = 2">
+        <then>
+
+    <vr id="F1-P-Counter" value="#F1-P-Counter + 1"/>
+    <vr id="vr_FY1-LANE-D_Counter" value="1"/>
+    <vr id="vr_FY1-LANE-D_PCounter" value="1"/>
+    <vr id="vr_FY1-LANE-D_P" value="#F1-P-Counter" text="vr_FY1-LANE-D_"/>
+        </then>
+
+      </if>
+
+    <if condition="#vr_FY1-LANE-D_LocoType = 3">
+        <then>
+
+    <vr id="F1-L-Counter" value="#F1-L-Counter + 1"/>
+    <vr id="vr_FY1-LANE-D_Counter" value="1"/>
+    <vr id="vr_FY1-LANE-D_LCounter" value="1"/>
+    <vr id="vr_FY1-LANE-D_L" value="#F1-L-Counter" text="vr_FY1-LANE-D_"/>
+
+        </then>
+
+      </if>
+
+
+    <if condition="#vr_FY1-LANE-D_LocoType = 4">
+        <then>
+
+    <vr id="F1-S1-Counter" value="#F1-S1-Counter + 1"/>
+    <vr id="vr_FY1-LANE-D_Counter" value="1"/>
+    <vr id="vr_FY1-LANE-D_S1Counter" value="1"/>
+    <vr id="vr_FY1-LANE-D_S1" value="#F1-S1-Counter" text="vr_FY1-LANE-D_"/>
+
+        </then>
+
+      </if>
+
+      <if condition="#vr_FY1-LANE-D_LocoType = 5">
+          <then>
+
+      <vr id="F1-S2-Counter" value="#F1-S2-Counter + 1"/>
+      <vr id="vr_FY1-LANE-D_Counter" value="1"/>
+      <vr id="vr_FY1-LANE-D_S2Counter" value="1"/>
+      <vr id="vr_FY1-LANE-D_S2" value="#F1-S2-Counter" text="vr_FY1-LANE-D_"/>
+
+          </then>
+
+        </if>
+
+
+      </then>
+    </if>
+    </else>
+      </if>
+
+
+      <if condition="@vr_FY1-LANE-E_ = 0">
+          <then>
+      <trace text="No Train-D"/>
+          </then>
+          <else>
+
+      <if condition="#vr_FY1-LANE-E_Counter = 0">
+      <then>
+
+
+
+
+      <if condition="#vr_FY1-LANE-E_LocoType = 0">
+      <then>
+
+
+      <vr id="vr_FY1-LANE-E_SCounter" value="1"/>
+      <vr id="F1-S-Counter" value="#F1-S-Counter + 1"/>
+      <vr id="vr_FY1-LANE-E_Counter" value="1"/>
+      <vr id="vr_FY1-LANE-E_S" value="#F1-S-Counter" text="vr_FY1-LANE-E_"/>
+      </then>
+
+      </if>
+
+      <if condition="#vr_FY1-LANE-E_LocoType = 1">
+      <then>
+
+      <trace text="Freight"/>
+      <vr id="F1-F-Counter" value="#F1-F-Counter + 1"/>
+      <vr id="vr_FY1-LANE-E_Counter" value="1"/>
+      <vr id="vr_FY1-LANE-E_FCounter" value="1"/>
+      <vr id="vr_FY1-LANE-E_F" value="#F1-F-Counter" text="vr_FY1-LANE-E_"/>
+
+
+
+
+
+      </then>
+
+      </if>
+
+      <if condition="#vr_FY1-LANE-E_LocoType = 2">
+          <then>
+
+      <vr id="F1-P-Counter" value="#F1-P-Counter + 1"/>
+      <vr id="vr_FY1-LANE-E_Counter" value="1"/>
+      <vr id="vr_FY1-LANE-E_PCounter" value="1"/>
+      <vr id="vr_FY1-LANE-E_P" value="#F1-P-Counter" text="vr_FY1-LANE-E_"/>
+          </then>
+
+        </if>
+
+      <if condition="#vr_FY1-LANE-E_LocoType = 3">
+          <then>
+
+      <vr id="F1-L-Counter" value="#F1-L-Counter + 1"/>
+      <vr id="vr_FY1-LANE-E_Counter" value="1"/>
+      <vr id="vr_FY1-LANE-E_LCounter" value="1"/>
+      <vr id="vr_FY1-LANE-E_L" value="#F1-L-Counter" text="vr_FY1-LANE-E_"/>
+
+          </then>
+
+        </if>
+
+
+      <if condition="#vr_FY1-LANE-E_LocoType = 4">
+          <then>
+
+      <vr id="F1-S1-Counter" value="#F1-S1-Counter + 1"/>
+      <vr id="vr_FY1-LANE-E_Counter" value="1"/>
+      <vr id="vr_FY1-LANE-E_S1Counter" value="1"/>
+      <vr id="vr_FY1-LANE-E_S1" value="#F1-S1-Counter" text="vr_FY1-LANE-E_"/>
+
+          </then>
+
+        </if>
+
+        <if condition="#vr_FY1-LANE-E_LocoType = 5">
+            <then>
+
+        <vr id="F1-S2-Counter" value="#F1-S2-Counter + 1"/>
+        <vr id="vr_FY1-LANE-E_Counter" value="1"/>
+        <vr id="vr_FY1-LANE-E_S2Counter" value="1"/>
+        <vr id="vr_FY1-LANE-E_S2" value="#F1-S2-Counter" text="vr_FY1-LANE-E_"/>
+
+            </then>
+
+          </if>
+
+
+        </then>
+      </if>
+      </else>
+        </if>
+
+
+        <if condition="@vr_FY1-LANE-F_ = 0">
+            <then>
+        <trace text="No Train-D"/>
+            </then>
+            <else>
+
+        <if condition="#vr_FY1-LANE-F_Counter = 0">
+        <then>
+
+
+
+
+        <if condition="#vr_FY1-LANE-F_LocoType = 0">
+        <then>
+
+
+        <vr id="vr_FY1-LANE-F_SCounter" value="1"/>
+        <vr id="F1-S-Counter" value="#F1-S-Counter + 1"/>
+        <vr id="vr_FY1-LANE-F_Counter" value="1"/>
+        <vr id="vr_FY1-LANE-F_S" value="#F1-S-Counter" text="vr_FY1-LANE-F_"/>
+        </then>
+
+        </if>
+
+        <if condition="#vr_FY1-LANE-F_LocoType = 1">
+        <then>
+
+        <trace text="Freight"/>
+        <vr id="F1-F-Counter" value="#F1-F-Counter + 1"/>
+        <vr id="vr_FY1-LANE-F_Counter" value="1"/>
+        <vr id="vr_FY1-LANE-F_FCounter" value="1"/>
+        <vr id="vr_FY1-LANE-F_F" value="#F1-F-Counter" text="vr_FY1-LANE-F_"/>
+
+
+
+
+
+        </then>
+
+        </if>
+
+        <if condition="#vr_FY1-LANE-F_LocoType = 2">
+            <then>
+
+        <vr id="F1-P-Counter" value="#F1-P-Counter + 1"/>
+        <vr id="vr_FY1-LANE-F_Counter" value="1"/>
+        <vr id="vr_FY1-LANE-F_PCounter" value="1"/>
+        <vr id="vr_FY1-LANE-F_P" value="#F1-P-Counter" text="vr_FY1-LANE-F_"/>
+            </then>
+
+          </if>
+
+        <if condition="#vr_FY1-LANE-F_LocoType = 3">
+            <then>
+
+        <vr id="F1-L-Counter" value="#F1-L-Counter + 1"/>
+        <vr id="vr_FY1-LANE-F_Counter" value="1"/>
+        <vr id="vr_FY1-LANE-F_LCounter" value="1"/>
+        <vr id="vr_FY1-LANE-F_L" value="#F1-L-Counter" text="vr_FY1-LANE-F_"/>
+
+            </then>
+
+          </if>
+
+
+        <if condition="#vr_FY1-LANE-F_LocoType = 4">
+            <then>
+
+        <vr id="F1-S1-Counter" value="#F1-S1-Counter + 1"/>
+        <vr id="vr_FY1-LANE-F_Counter" value="1"/>
+        <vr id="vr_FY1-LANE-F_S1Counter" value="1"/>
+        <vr id="vr_FY1-LANE-F_S1" value="#F1-S1-Counter" text="vr_FY1-LANE-F_"/>
+
+            </then>
+
+          </if>
+
+          <if condition="#vr_FY1-LANE-F_LocoType = 5">
+              <then>
+
+          <vr id="F1-S2-Counter" value="#F1-S2-Counter + 1"/>
+          <vr id="vr_FY1-LANE-F_Counter" value="1"/>
+          <vr id="vr_FY1-LANE-F_S2Counter" value="1"/>
+          <vr id="vr_FY1-LANE-F_S2" value="#F1-S2-Counter" text="vr_FY1-LANE-F_"/>
+
+              </then>
+
+            </if>
+
+
+          </then>
+        </if>
+        </else>
+          </if>
+
+
+
+
+
+<!-- Randomizer S -->
+<!--<vr id="F1-S-Check" value="0"/>-->
+
+<while condition="#F1-S-Counter > 0">
+<while condition="#F1-S-Check = 0">
+
+<trace text="#F1-S-Counter"/>
+
+
+
+
+
+
+  <if condition="#F1-S-Counter = 0">
+    <then>
+      <vr id="F1-S-Loco" value="0"/>
+      <trace text="#F1-S-Counter"/>
+      </then>
+  <else>
+<vr id="F1-S-Loco" min="1" max="6" cmd="random"/>
+<trace text="#F1-S-Loco"/>
+</else>
+</if>
+
+
+
+<!-- Randomizer S -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Allocation S-->
+<!--<vr id="F1-S-Check" value="0"/>-->
+  <if condition="#F1-S-Check = 0">
+    <then>
+      <trace text="HEREA1S"/>
+<if condition="#F1-S-Counter > 0">
+<then>
+  <trace text="HERE2A-B-S"/>
+      <if condition="#vr_FY1-LANE-A_S = #F1-S-Loco">
+            <then>
+<trace text="HERES3A"/>
+ <vr id="SF1" text="S"/>
+
+<vr id="TempF1A" value="@vr_FY1-LANE-A_"/>
+<trace text="#TempF1A"/>
+<set vr="SF1" table="lclist" id="#TempF1A" set="class" setint="false"/>
+<vr id="F1-S-Check" value="1"/>
+                <trace text="LOCOAS"/>
+
+            </then>
+      </if>
+
+
+
+
+      <if condition="#vr_FY1-LANE-B_S = #F1-S-Loco">
+            <then>
+<trace text="HERES3B"/>
+ <vr id="SF1" text="S"/>
+
+<vr id="TempF1B" value="@vr_FY1-LANE-B_"/>
+<trace text="#TempF1B"/>
+<set vr="SF1" table="lclist" id="#TempF1B" set="class" setint="false"/>
+<vr id="F1-S-Check" value="1"/>
+                <trace text="LOCOBS"/>
+
+            </then>
+      </if>
+
+
+
+
+      <if condition="#vr_FY1-LANE-C_S = #F1-S-Loco">
+            <then>
+<trace text="HERES3B"/>
+ <vr id="SF1" text="S"/>
+
+<vr id="TempF1C" value="@vr_FY1-LANE-C_"/>
+<trace text="#TempF1C"/>
+<set vr="SF1" table="lclist" id="#TempF1C" set="class" setint="false"/>
+<vr id="F1-S-Check" value="1"/>
+                <trace text="LOCOCS"/>
+
+            </then>
+      </if>
+
+
+      <if condition="#vr_FY1-LANE-D_S = #F1-S-Loco">
+            <then>
+      <trace text="HERES3B"/>
+      <vr id="SF1" text="S"/>
+
+      <vr id="TempF1D" value="@vr_FY1-LANE-D_"/>
+      <trace text="#TempF1D"/>
+      <set vr="SF1" table="lclist" id="#TempF1D" set="class" setint="false"/>
+      <vr id="F1-S-Check" value="1"/>
+                <trace text="LOCODS"/>
+
+            </then>
+      </if>
+
+
+      <if condition="#vr_FY1-LANE-E_S = #F1-S-Loco">
+            <then>
+      <trace text="HERES3E"/>
+      <vr id="SF1" text="S"/>
+
+      <vr id="TempF1E" value="@vr_FY1-LANE-E_"/>
+      <trace text="#TempF1E"/>
+      <set vr="SF1" table="lclist" id="#TempF1E" set="class" setint="false"/>
+      <vr id="F1-S-Check" value="1"/>
+                <trace text="LOCOES"/>
+
+            </then>
+      </if>
+
+      <if condition="#vr_FY1-LANE-F_S = #F1-S-Loco">
+            <then>
+      <trace text="HERES3F"/>
+      <vr id="SF1" text="S"/>
+
+      <vr id="TempF1F" value="@vr_FY1-LANE-F_"/>
+      <trace text="#TempF1F"/>
+      <set vr="SF1" table="lclist" id="#TempF1F" set="class" setint="false"/>
+      <vr id="F1-S-Check" value="1"/>
+                <trace text="LOCOFS"/>
+
+            </then>
+      </if>
+
+
+    </then>
+    </if>
+
+    </then>
+  </if>
+</while>
+</while>
+<!-- Allocation S-->
+
+
+
+
+
+
+
+
+<!-- Randomizer F -->
+<!--<vr id="F1-F-Check" value="0"/>-->
+
+<while condition="#F1-F-Counter > 0">
+<while condition="#F1-F-Check = 0">
+
+
+<trace text="#F1-F-Counter"/>
+
+
+  <if condition="#F1-F-Counter = 0">
+    <then>
+      <vr id="F1-F-Loco" value="0"/>
+      <trace text="#F1-F-Counter"/>
+      </then>
+  <else>
+<vr id="F1-F-Loco" min="1" max="6" cmd="random"/>
+<trace text="#F1-F-Loco"/>
+</else>
+</if>
+
+
+<!-- Randomizer F -->
+
+
+
+
+  <!-- Allocation F-->
+<!--<vr id="F1-F-Check" value="0"/>-->
+  <if condition="#F1-F-Check = 0">
+    <then>
+      <if condition="#F1-F-Counter > 0">
+      <then>
+
+      <if condition="#vr_FY1-LANE-A_F = #F1-F-Loco">
+            <then>
+
+ <vr id="FF1" text="F"/>
+
+<vr id="TempF1A" value="@vr_FY1-LANE-A_"/>
+<trace text="#TempF1A"/>
+<set vr="FF1" table="lclist" id="#TempF1A" set="class" setint="false"/>
+<vr id="F1-F-Check" value="1"/>
+                <trace text="LOCOAF"/>
+
+            </then>
+      </if>
+
+      <if condition="#vr_FY1-LANE-B_F = #F1-F-Loco">
+            <then>
+
+ <vr id="FF1" text="F"/>
+
+<vr id="TempF1B" value="@vr_FY1-LANE-B_"/>
+<trace text="#TempF1B"/>
+<set vr="FF1" table="lclist" id="#TempF1B" set="class" setint="false"/>
+<vr id="F1-F-Check" value="1"/>
+                <trace text="LOCOBF"/>
+
+            </then>
+      </if>
+
+      <if condition="#vr_FY1-LANE-C_F = #F1-F-Loco">
+            <then>
+
+      <vr id="FF1" text="F"/>
+
+      <vr id="TempF1C" value="@vr_FY1-LANE-C_"/>
+      <trace text="#TempF1C"/>
+      <set vr="FF1" table="lclist" id="#TempF1C" set="class" setint="false"/>
+      <vr id="F1-F-Check" value="1"/>
+                <trace text="LOCOCF"/>
+
+            </then>
+      </if>
+
+      <if condition="#vr_FY1-LANE-D_F = #F1-F-Loco">
+            <then>
+
+      <vr id="FF1" text="F"/>
+
+      <vr id="TempF1D" value="@vr_FY1-LANE-D_"/>
+      <trace text="#TempF1D"/>
+      <set vr="FF1" table="lclist" id="#TempF1D" set="class" setint="false"/>
+      <vr id="F1-F-Check" value="1"/>
+                <trace text="LOCODF"/>
+
+            </then>
+      </if>
+
+
+      <if condition="#vr_FY1-LANE-E_F = #F1-F-Loco">
+            <then>
+
+      <vr id="FF1" text="F"/>
+
+      <vr id="TempF1E" value="@vr_FY1-LANE-E_"/>
+      <trace text="#TempF1E"/>
+      <set vr="FF1" table="lclist" id="#TempF1E" set="class" setint="false"/>
+      <vr id="F1-F-Check" value="1"/>
+                <trace text="LOCOEF"/>
+
+            </then>
+      </if>
+
+      <if condition="#vr_FY1-LANE-F_F = #F1-F-Loco">
+            <then>
+
+      <vr id="FF1" text="F"/>
+
+      <vr id="TempF1F" value="@vr_FY1-LANE-F_"/>
+      <trace text="#TempF1F"/>
+      <set vr="FF1" table="lclist" id="#TempF1F" set="class" setint="false"/>
+      <vr id="F1-F-Check" value="1"/>
+                <trace text="LOCOFF"/>
+
+            </then>
+      </if>
+
+    </then>
+  </if>
+    </then>
+  </if>
+
+<!-- Allocation F-->
+
+</while>
+</while>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Randomizer P -->
+<!--<vr id="F1-P-Check" value="0"/>-->
+
+<while condition="#F1-P-Counter > 0">
+<while condition="#F1-P-Check = 0">
+
+<trace text="#F1-P-Counter"/>
+
+
+
+
+
+
+  <if condition="#F1-P-Counter = 0">
+    <then>
+      <vr id="F1-P-Loco" value="0"/>
+      <trace text="#F1-P-Counter"/>
+      </then>
+  <else>
+<vr id="F1-P-Loco" min="1" max="6" cmd="random"/>
+<trace text="#F1-P-Loco"/>
+</else>
+</if>
+
+
+
+<!-- Randomizer P -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Allocation P-->
+<!--<vr id="F1-P-Check" value="0"/>-->
+  <if condition="#F1-P-Check = 0">
+    <then>
+      <trace text="HEREA1P"/>
+<if condition="#F1-P-Counter > 0">
+<then>
+  <trace text="HERE2A-B-P"/>
+      <if condition="#vr_FY1-LANE-A_P = #F1-P-Loco">
+            <then>
+<trace text="HEREP3A"/>
+ <vr id="PF1" text="P"/>
+
+<vr id="TempF1A" value="@vr_FY1-LANE-A_"/>
+<trace text="#TempF1A"/>
+<set vr="PF1" table="lclist" id="#TempF1A" set="class" setint="false"/>
+<vr id="F1-P-Check" value="1"/>
+                <trace text="LOCOAP"/>
+
+            </then>
+      </if>
+
+
+
+
+      <if condition="#vr_FY1-LANE-B_P = #F1-P-Loco">
+            <then>
+<trace text="HEREP3B"/>
+ <vr id="PF1" text="P"/>
+
+<vr id="TempF1B" value="@vr_FY1-LANE-B_"/>
+<trace text="#TempF1B"/>
+<set vr="PF1" table="lclist" id="#TempF1B" set="class" setint="false"/>
+<vr id="F1-P-Check" value="1"/>
+                <trace text="LOCOBP"/>
+
+            </then>
+      </if>
+
+      <if condition="#vr_FY1-LANE-C_P = #F1-P-Loco">
+            <then>
+    <trace text="HEREP3C"/>
+    <vr id="PF1C" text="P"/>
+
+    <vr id="TempF1C" value="@vr_FY1-LANE-C_"/>
+    <trace text="#TempF1C"/>
+    <set vr="PF1C" table="lclist" id="#TempF1C" set="class" setint="false"/>
+    <vr id="F1-P-Check" value="1"/>
+                <trace text="LOCOCP"/>
+
+            </then>
+      </if>
+
+
+      <if condition="#vr_FY1-LANE-D_P = #F1-P-Loco">
+            <then>
+      <trace text="HEREP3D"/>
+      <vr id="PF1D" text="P"/>
+
+      <vr id="TempF1D" value="@vr_FY1-LANE-D_"/>
+      <trace text="#TempF1D"/>
+      <set vr="PF1D" table="lclist" id="#TempF1D" set="class" setint="false"/>
+      <vr id="F1-P-Check" value="1"/>
+                <trace text="LOCODP"/>
+
+            </then>
+      </if>
+
+      <if condition="#vr_FY1-LANE-E_P = #F1-P-Loco">
+            <then>
+      <trace text="HEREP3E"/>
+      <vr id="PF1E" text="P"/>
+
+      <vr id="TempF1E" value="@vr_FY1-LANE-E_"/>
+      <trace text="#TempF1E"/>
+      <set vr="PF1E" table="lclist" id="#TempF1E" set="class" setint="false"/>
+      <vr id="F1-P-Check" value="1"/>
+                <trace text="LOCOEP"/>
+
+            </then>
+      </if>
+
+      <if condition="#vr_FY1-LANE-F_P = #F1-P-Loco">
+            <then>
+      <trace text="HEREP3F"/>
+      <vr id="PF1F" text="P"/>
+
+      <vr id="TempF1F" value="@vr_FY1-LANE-F_"/>
+      <trace text="#TempF1F"/>
+      <set vr="PF1F" table="lclist" id="#TempF1F" set="class" setint="false"/>
+      <vr id="F1-P-Check" value="1"/>
+                <trace text="LOCOFP"/>
+
+            </then>
+      </if>
+
+
+    </then>
+    </if>
+
+    </then>
+  </if>
+</while>
+</while>
+<!-- Allocation P-->
+
+
+
+
+<!-- Randomizer L -->
+<!--<vr id="F1-L-Check" value="0"/>-->
+
+<while condition="#F1-L-Counter > 0">
+<while condition="#F1-L-Check = 0">
+
+<trace text="#F1-L-Counter"/>
+
+
+
+
+
+
+  <if condition="#F1-L-Counter = 0">
+    <then>
+      <vr id="F1-L-Loco" value="0"/>
+      <trace text="#F1-L-Counter"/>
+      </then>
+  <else>
+<vr id="F1-L-Loco" min="1" max="6" cmd="random"/>
+<trace text="#F1-L-Loco"/>
+</else>
+</if>
+
+
+
+<!-- Randomizer L -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Allocation L-->
+<!--<vr id="F1-L-Check" value="0"/>-->
+  <if condition="#F1-L-Check = 0">
+    <then>
+      <trace text="HEREA1L"/>
+<if condition="#F1-L-Counter > 0">
+<then>
+  <trace text="HERE2A-B-L"/>
+      <if condition="#vr_FY1-LANE-A_L = #F1-L-Loco">
+            <then>
+<trace text="HEREL3A"/>
+ <vr id="LF1" text="L"/>
+
+<vr id="TempF1A" value="@vr_FY1-LANE-A_"/>
+<trace text="#TempF1A"/>
+<set vr="LF1" table="lclist" id="#TempF1A" set="class" setint="false"/>
+<vr id="F1-L-Check" value="1"/>
+                <trace text="LOCOAL"/>
+
+            </then>
+      </if>
+
+
+
+
+      <if condition="#vr_FY1-LANE-B_L = #F1-L-Loco">
+            <then>
+<trace text="HEREL3B"/>
+ <vr id="LF1" text="L"/>
+
+<vr id="TempF1B" value="@vr_FY1-LANE-B_"/>
+<trace text="#TempF1B"/>
+<set vr="LF1" table="lclist" id="#TempF1B" set="class" setint="false"/>
+<vr id="F1-L-Check" value="1"/>
+                <trace text="LOCOBL"/>
+
+            </then>
+      </if>
+
+
+
+      <if condition="#vr_FY1-LANE-C_L = #F1-L-Loco">
+            <then>
+      <trace text="HEREL3C"/>
+      <vr id="LF1C" text="L"/>
+
+      <vr id="TempF1C" value="@vr_FY1-LANE-C_"/>
+      <trace text="#TempF1C"/>
+      <set vr="LF1C" table="lclist" id="#TempF1C" set="class" setint="false"/>
+      <vr id="F1-L-Check" value="1"/>
+                <trace text="LOCOCL"/>
+
+            </then>
+      </if>
+
+      <if condition="#vr_FY1-LANE-D_L = #F1-L-Loco">
+            <then>
+      <trace text="HEREL3D"/>
+      <vr id="LF1D" text="L"/>
+
+      <vr id="TempF1D" value="@vr_FY1-LANE-D_"/>
+      <trace text="#TempF1D"/>
+      <set vr="LF1D" table="lclist" id="#TempF1D" set="class" setint="false"/>
+      <vr id="F1-L-Check" value="1"/>
+                <trace text="LOCODL"/>
+
+            </then>
+      </if>
+
+
+      <if condition="#vr_FY1-LANE-E_L = #F1-L-Loco">
+            <then>
+      <trace text="HEREL3E"/>
+      <vr id="LF1E" text="L"/>
+
+      <vr id="TempF1E" value="@vr_FY1-LANE-E_"/>
+      <trace text="#TempF1E"/>
+      <set vr="LF1E" table="lclist" id="#TempF1E" set="class" setint="false"/>
+      <vr id="F1-L-Check" value="1"/>
+                <trace text="LOCOEL"/>
+
+            </then>
+      </if>
+
+
+      <if condition="#vr_FY1-LANE-F_L = #F1-L-Loco">
+            <then>
+      <trace text="HEREL3F"/>
+      <vr id="LF1F" text="L"/>
+
+      <vr id="TempF1F" value="@vr_FY1-LANE-F_"/>
+      <trace text="#TempF1F"/>
+      <set vr="LF1F" table="lclist" id="#TempF1F" set="class" setint="false"/>
+      <vr id="F1-L-Check" value="1"/>
+                <trace text="LOCOFL"/>
+
+            </then>
+      </if>
+
+    </then>
+    </if>
+
+    </then>
+  </if>
+</while>
+</while>
+<!-- Allocation L-->
+
+
+
+<!-- Randomizer S1 -->
+<!--<vr id="F1-S1-Check" value="0"/>-->
+
+<while condition="#F1-S1-Counter > 0">
+<while condition="#F1-S1-Check = 0">
+
+<trace text="#F1-S1-Counter"/>
+
+
+
+
+
+
+  <if condition="#F1-S1-Counter = 0">
+    <then>
+      <vr id="F1-S1-Loco" value="0"/>
+      <trace text="#F1-S1-Counter"/>
+      </then>
+  <else>
+<vr id="F1-S1-Loco" min="1" max="6" cmd="random"/>
+<trace text="#F1-S1-Loco"/>
+</else>
+</if>
+
+
+
+<!-- Randomizer S1 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Allocation S1-->
+<!--<vr id="F1-S1-Check" value="0"/>-->
+  <if condition="#F1-S1-Check = 0">
+    <then>
+      <trace text="HEREA1S1"/>
+<if condition="#F1-S1-Counter > 0">
+<then>
+  <trace text="HERE2A-B-S1"/>
+      <if condition="#vr_FY1-LANE-A_S1 = #F1-S1-Loco">
+            <then>
+<trace text="HERES13A"/>
+ <vr id="S1F1" text="S1"/>
+
+<vr id="TempF1A" value="@vr_FY1-LANE-A_"/>
+<trace text="#TempF1A"/>
+<set vr="S1F1" table="lclist" id="#TempF1A" set="class" setint="false"/>
+<vr id="F1-S1-Check" value="1"/>
+                <trace text="LOCOAS1"/>
+
+            </then>
+      </if>
+
+
+
+
+      <if condition="#vr_FY1-LANE-B_S1 = #F1-S1-Loco">
+            <then>
+<trace text="HERES13B"/>
+ <vr id="S1F1" text="S1"/>
+
+<vr id="TempF1B" value="@vr_FY1-LANE-B_"/>
+<trace text="#TempF1B"/>
+<set vr="S1F1" table="lclist" id="#TempF1B" set="class" setint="false"/>
+<vr id="F1-S1-Check" value="1"/>
+                <trace text="LOCOBS1"/>
+
+            </then>
+      </if>
+
+      <if condition="#vr_FY1-LANE-C_S1 = #F1-S1-Loco">
+            <then>
+    <trace text="HERES13C"/>
+    <vr id="S1F1C" text="S1"/>
+
+    <vr id="TempF1C" value="@vr_FY1-LANE-C_"/>
+    <trace text="#TempF1C"/>
+    <set vr="S1F1C" table="lclist" id="#TempF1C" set="class" setint="false"/>
+    <vr id="F1-S1-Check" value="1"/>
+                <trace text="LOCOCS1"/>
+
+            </then>
+      </if>
+
+
+      <if condition="#vr_FY1-LANE-D_S1 = #F1-S1-Loco">
+            <then>
+    <trace text="HERES13D"/>
+    <vr id="S1F1D" text="S1"/>
+
+    <vr id="TempF1D" value="@vr_FY1-LANE-D_"/>
+    <trace text="#TempF1D"/>
+    <set vr="S1F1D" table="lclist" id="#TempF1D" set="class" setint="false"/>
+    <vr id="F1-S1-Check" value="1"/>
+                <trace text="LOCODS1"/>
+
+            </then>
+      </if>
+
+
+      <if condition="#vr_FY1-LANE-E_S1 = #F1-S1-Loco">
+            <then>
+      <trace text="HERES13E"/>
+      <vr id="S1F1E" text="S1"/>
+
+      <vr id="TempF1E" value="@vr_FY1-LANE-E_"/>
+      <trace text="#TempF1E"/>
+      <set vr="S1F1E" table="lclist" id="#TempF1E" set="class" setint="false"/>
+      <vr id="F1-S1-Check" value="1"/>
+                <trace text="LOCOES1"/>
+
+            </then>
+      </if>
+
+      <if condition="#vr_FY1-LANE-F_S1 = #F1-S1-Loco">
+            <then>
+      <trace text="HERES13F"/>
+      <vr id="S1F1F" text="S1"/>
+
+      <vr id="TempF1F" value="@vr_FY1-LANE-F_"/>
+      <trace text="#TempF1F"/>
+      <set vr="S1F1F" table="lclist" id="#TempF1F" set="class" setint="false"/>
+      <vr id="F1-S1-Check" value="1"/>
+                <trace text="LOCOFS1"/>
+
+            </then>
+      </if>
+
+    </then>
+    </if>
+
+    </then>
+  </if>
+</while>
+</while>
+<!-- Allocation S1-->
+
+
+
+<!-- Randomizer S2 -->
+<!--<vr id="F1-S2-Check" value="0"/>-->
+
+<while condition="#F1-S2-Counter > 0">
+<while condition="#F1-S2-Check = 0">
+
+<trace text="#F1-S2-Counter"/>
+
+
+
+
+
+
+  <if condition="#F1-S2-Counter = 0">
+    <then>
+      <vr id="F1-S2-Loco" value="0"/>
+      <trace text="#F1-S2-Counter"/>
+      </then>
+  <else>
+<vr id="F1-S2-Loco" min="1" max="6" cmd="random"/>
+<trace text="#F1-S2-Loco"/>
+</else>
+</if>
+
+
+
+<!-- Randomizer S2 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Allocation S2-->
+<!--<vr id="F1-S2-Check" value="0"/>-->
+  <if condition="#F1-S2-Check = 0">
+    <then>
+      <trace text="HEREA1S2"/>
+<if condition="#F1-S2-Counter > 0">
+<then>
+  <trace text="HERE2A-B-S2"/>
+      <if condition="#vr_FY1-LANE-A_S2 = #F1-S2-Loco">
+            <then>
+<trace text="HERES23A"/>
+ <vr id="S2F1" text="S2"/>
+
+<vr id="TempF1A" value="@vr_FY1-LANE-A_"/>
+<trace text="#TempF1A"/>
+<set vr="S2F1" table="lclist" id="#TempF1A" set="class" setint="false"/>
+<vr id="F1-S2-Check" value="1"/>
+                <trace text="LOCOAS2"/>
+
+            </then>
+      </if>
+
+
+
+
+      <if condition="#vr_FY1-LANE-B_S2 = #F1-S2-Loco">
+            <then>
+<trace text="HERES23B"/>
+ <vr id="S2F1" text="S2"/>
+
+<vr id="TempF1B" value="@vr_FY1-LANE-B_"/>
+<trace text="#TempF1B"/>
+<set vr="S2F1" table="lclist" id="#TempF1B" set="class" setint="false"/>
+<vr id="F1-S2-Check" value="1"/>
+                <trace text="LOCOBS2"/>
+
+            </then>
+      </if>
+
+      <if condition="#vr_FY1-LANE-C_S2 = #F1-S2-Loco">
+            <then>
+      <trace text="HERES23C"/>
+      <vr id="S2F1C" text="S2"/>
+
+      <vr id="TempF1C" value="@vr_FY1-LANE-C_"/>
+      <trace text="#TempF1C"/>
+      <set vr="S2F1C" table="lclist" id="#TempF1C" set="class" setint="false"/>
+      <vr id="F1-S2-Check" value="1"/>
+                <trace text="LOCOCS2"/>
+
+            </then>
+      </if>
+
+
+      <if condition="#vr_FY1-LANE-D_S2 = #F1-S2-Loco">
+            <then>
+      <trace text="HERES23D"/>
+      <vr id="S2F1D" text="S2"/>
+
+      <vr id="TempF1D" value="@vr_FY1-LANE-D_"/>
+      <trace text="#TempF1D"/>
+      <set vr="S2F1D" table="lclist" id="#TempF1D" set="class" setint="false"/>
+      <vr id="F1-S2-Check" value="1"/>
+                <trace text="LOCODS2"/>
+
+            </then>
+      </if>
+
+
+
+
+      <if condition="#vr_FY1-LANE-E_S2 = #F1-S2-Loco">
+            <then>
+      <trace text="HERES23E"/>
+      <vr id="S2F1E" text="S2"/>
+
+      <vr id="TempF1E" value="@vr_FY1-LANE-E_"/>
+      <trace text="#TempF1E"/>
+      <set vr="S2F1E" table="lclist" id="#TempF1E" set="class" setint="false"/>
+      <vr id="F1-S2-Check" value="1"/>
+                <trace text="LOCOES2"/>
+
+            </then>
+      </if>
+
+
+      <if condition="#vr_FY1-LANE-F_S2 = #F1-S2-Loco">
+            <then>
+      <trace text="HERES23F"/>
+      <vr id="S2F1F" text="S2"/>
+
+      <vr id="TempF1F" value="@vr_FY1-LANE-F_"/>
+      <trace text="#TempF1F"/>
+      <set vr="S2F1F" table="lclist" id="#TempF1F" set="class" setint="false"/>
+      <vr id="F1-S2-Check" value="1"/>
+                <trace text="LOCOFS2"/>
+
+            </then>
+      </if>
+
+      
+    </then>
+    </if>
+
+    </then>
+  </if>
+</while>
+</while>
+<!-- Allocation S2-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<if condition="@vr_FY1-LANE-C_ = 0">
+    <then>
+<trace text="No Train-C"/>
+    </then>
+    <else>
+<trace text="Train-C"/>
+    </else>
+  </if>
+
+<if condition="@vr_FY1-LANE-D_ = 0">
+    <then>
+<trace text="No Train-D"/>
+    </then>
+    <else>
+<trace text="Train-D"/>
+    </else>
+  </if>
+
+<if condition="@vr_FY1-LANE-E_ = 0">
+    <then>
+<trace text="No Train-E"/>
+    </then>
+    <else>
+<trace text="Train-E"/>
+    </else>
+  </if>
+
+<if condition="@vr_FY1-LANE-F_ = 0">
+    <then>
+<trace text="No Train-F"/>
+    </then>
+    <else>
+<trace text="Train-F"/>
+    </else>
+  </if> -->
+<sleep time="10000"/>
+</while>
+</xmlscript>

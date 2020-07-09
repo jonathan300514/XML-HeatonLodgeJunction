@@ -1,0 +1,53 @@
+<xmlscript>
+
+
+
+<vr id="U" text="U"/> 
+
+
+<vr id="vr_%callerid%_" text="%lcid% %%"/>
+<query vr="vr_%callerid%_LocoType" table="lclist" id="%lcid%" get="class"/>
+
+<if condition="vr_%callerid%_LocoType = S">
+<then>
+<set vr="U" table="lclist" id="%lcid%" set="class" setint="false"/>
+<vr id="F1-S-Check" value="0"/>
+</then>
+</if>
+
+<if condition="vr_%callerid%_LocoType = F">
+<then>
+<set vr="U" table="lclist" id="%lcid%" set="class" setint="false"/>
+<vr id="F1-F-Check" value="0"/>
+</then>
+</if>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<trace text="HI THERE"/>
+
+
+
+<vr id="vr_%callerid%_" text="%lcid% %%"/>
+<query vr="vr_%callerid%_LocoType" table="lclist" id="%lcid%" get="era"/>
+
+  
+
+<!--
+<trace text="vr_%callerid%_LocoType"/>-->
+
+</xmlscript>
